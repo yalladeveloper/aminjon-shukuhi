@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "icon" href = 
+"https://banner2.cleanpng.com/20180407/ygq/kisspng-emblem-of-tajikistan-tajik-soviet-socialist-republ-usa-gerb-5ac8b47c222904.4161086515231028441399.jpg" 
+        type = "image/x-icon">
+  <title>Аминҷон Шукуҳӣ</title>
+  <style>
+  * {
+  margin: auto;
+}
+   body{
+  display: flex;
+  flex-direction: column;
+  font-family:'Lora', serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+h1 {
+  padding-bottom: 30px;
+  padding-left: 0.5em;
+  text-align: center;
+  font-size: 3vw;
+  letter-spacing: 0.5em;
+}
+
+h2 {
+  font-size: 2.8vw;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background : #1f1f1f;
+  color: white;
+  width: 100%;
+  max-height: max-content;
+  min-height: 1em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+
+.logo-section {
+  width: 10%;
+  margin-left: initial;
+}
+
+.site-logo{
+  margin-left: 0.8em;
+  max-width: 60%;
+}
+
+.navigation-bar{
+  width: 70%;
+  flex-grow: 2%;
+  margin-inline-end: initial;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+header a, footer a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row; 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 0px;
+  padding-top: 1em;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10% 0;
+}
+
+section div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section h2{
+  text-align: center;
+}
+
+.cover-sect {
+  margin-top: 0px;
+  padding: 5% 0;
+  background-opacity: 0.5;
+}
+
+.title-text {
+  width: 40%;
+  text-align: center;
+  color: black;
+  margin: auto;
+  padding: 0 20px;
+  animation: fade-in;
+  animation-duration: 8s;
+}
+
+.story-sect{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #030f12;
+  color: #fff;
+}
+
+
+.box-feature{
+  width: 60%;
+  max-height: auto;
+}
+
+.box-feature img{
+  width: 100%;
+}
+
+.box-feature .cover-image{
+  animation: fade-in;
+  animation-duration: 5s;
+}
+
+.section-text h2 {
+  text-align: center; 
+}
+
+.section-text p {
+  text-align: justify;
+  margin: auto 2.5em;
+  line-height: 1.8em;
+}
+
+.samples {
+  flex-direction: column;
+  text-align: center;
+}
+
+.featured {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 5%;
+  margin: 20px auto;
+}
+
+.cont {
+  width: 100%;
+  color: black;  
+}
+
+.cont img{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.contact-section {
+  background: #030f12;
+  color: #fff;
+}
+
+.contact-section p{
+  padding-right: 2em;
+  padding-left: 3em;
+}
+
+.form-box {
+  padding-top: 1em;
+}
+
+form .form-entry{
+  display: block;
+  padding: 0.8em 0;
+}
+
+form .txt-box {
+  margin-top: 0.3em;
+  width: 100%;
+  padding: 0.7em 0;
+  border-radius: 2px;
+  border: 2px transparent;
+}
+
+form .btn {
+  text-align: center;
+  background-color: #e6e8e8;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: inherit;
+  border: 2px solid #eaeaea;
+  box-shadow: 0px 0px 10px 1px #29393e;
+  border-radius: 2px;
+  padding: 0.7em; 
+}
+
+.btn:hover{
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+
+.footer-section {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5em;
+  width: 100%;
+  color: #fff;
+  background-color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+.footer-section div{
+  margin-right: 2em;
+}
+
+.footer-section span{
+  text-align: center;
+  margin-left: 2em;
+}
+
+.footer-section .personal-info{
+  margin-left: 15em;
+}
+
+@media all and (max-width: 768px){
+  section div {
+    width: 80%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .story-sect, .sample, .contact-section, .featured{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .section-text h2 {
+    text-align: center; 
+  }
+
+  .section-text p {
+    text-align: justify;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size:2.0vw;
+  }    
+  
+}
+
+
+  </style>
+</head>
+<body>
+  <header id="header"">
+    <nav id="nav-bar" class="navigation-bar">
+      <ul style="list-style:none;" class="navigation">
+	 
+        <li><a class="nav-link" href="#norm" lang="tj">Аминҷон Шукуҳӣ</a></li>
+        <li><a class="nav-link" href="#norm" lang="ru">Аминджон Шукухи</a></li>
+        <li><a class="nav-link" href="#norm" lang="en">Aminjon Shukuhi</a></li>
+        <li><a class="nav-link" href="#story"lang="tj">Тарҷумаи ҳол</a></li>
+        <li><a class="nav-link" href="#story"lang="ru">Резюме</a></li>
+        <li><a class="nav-link" href="#story"lang="en">Resume</a></li>
+        <li><a class="nav-link" href="#designs"lang="tj">Шеърхои шоир</a></li>
+        <li><a class="nav-link" href="#designs"lang="ru">Стихи поэта</a></li>
+        <li><a class="nav-link" href="#designs"lang="en">Poems of the poet</a></li>
+        <li><a class="nav-link" href="#contact"lang="tj">Тамос бо мо</a></li>
+        <li><a class="nav-link" href="#contact"lang="ru">Связаться с нами</a></li>
+        <li><a class="nav-link" href="#contact"lang="en">Contact us</a></li>
+		 <select id="lang-switch" style="font-family:'Lora', serif;text-transform: uppercase;font-size:100%;background-color:#1f1f1f;border-radius:4px;margin:auto;color:white; padding:3px">
+		<option value="tj" selected>Точики</option>
+        <option value="ru" >Руси</option>
+		<option value="en" >Англиси</option>
+		</select>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section id="norm" class="cover-sect">
+        <div class="title-text">
+          <h1 lang="tj">Аминҷон Шукуҳӣ</h1>
+          <h1 lang="ru">Аминджон Шукухи</h1>
+          <h1 lang="en">Aminjon Shukuhi</h1>
+          <p lang="tj">~ Шоири халкии Точикистон ~</p>
+          <p lang="ru">~ Народный поэт Таджикистана ~</p>
+          <p lang="en">~ People's poet of Tajikistan ~</p>
+        </div>
+        <div class="box-feature">
+          <img class="cover-image" src="https://upload.wikimedia.org/wikipedia/ru/a/a1/%D0%A8%D0%A3%D0%9A%D0%A3%D0%A5%D0%98%CC%81.jpg" alt="Living room sample" style="width:60%;padding-top:10%; margin:auto;"/>
+        </div>
+      </section>
+      
+      <!-- Тарҷумаи ҳол ........ -->
+      <section id="story" class="story-sect">
+        <div class="section-text">
+          <h2 lang="tj">Тарҷумаи ҳол</h2>
+          <h2 lang="ru">Резюме</h2>
+          <h2 lang="en">Resume</h2>
+          <p lang = "tj">Аминҷон Шукӯҳӣ (Ҳоҷибоев) 10-уми июни соли 1923 дар деҳаи Рӯмони ноҳияи Хуҷанд дар оилаи деҳқони камбағал ба дунё омадааст — шоири шӯравии тоҷик, дар адабиёти муосири тоҷик ҳамчун шоири лирик маъруф аст. 
+		  Курсҳои муаллимиро гузашта, дар мактабҳои Хуҷанд аз забон ва адабиёти тоҷик дарс додааст. 
+		  Дар солҳои Ҷанги Бузурги Ватанӣ дар сафи кормандони Умури дохила кор кардааст.
+		  Аз соли 1947 ба кори рӯзноманигорӣ гузашта, ба ҳайси мудири шуъба, котиби масъул, ҷонишини муҳаррири рӯзномаи «Ҳақиқати Ленинобод» шуғл варзидааст. 
+		  Соли 1955 факултаи рӯзноманигории мактаби олии ҳизбии назди Кумитаи Марказии Ҳизби Коммунисти Иттифоқи Советиро дар шаҳри Маскав хатм намуда, муҳаррири рӯзномаи ҷумҳуриявии «Тоҷикистони Советӣ» таъйин шуд. 
+		  Соли 1961 котиби раёсат, баъдтар муовини садри Раёсати Иттифоқи нависандагони Тоҷикистон интихоб гашта, кор кардааст.
+		  Аз соли 1967 то соли 1976 Раиси Кумитаи радио ва телевизиони давлатии Тоҷикистон буд. Пас аз он танҳо ба кори эҷодӣ машғул шудааст.
+          Шеърҳои аввалини Аминҷон Шукӯҳӣ соли 1942 дар рӯзномаи вилоятии «Стахановчӣ» чоп шудаанд.
+		  <br><br>Аминҷон Шукӯҳӣ қадамҳои эҷодии худро ҳанӯз дар солҳои 30-юми садаи гузашта оғоз карда буд, аммо нахустин нашрияҳояш дар авоили солҳои 40-ум ба қайд гирифта шуданд.
+		  Маҷмӯаи аввалини шеърҳои ӯ «Суруди чашмасор» соли1948 аз чоп баромад. Минбаъд маҷмӯаҳои «Ватани сулҳ» (1952), «Рӯзҳои мо» (1954), «Садои дил» (1956), достони «Кӯчабоғи ошиқон» (1962), драмаи мусиқии «Кӯчабоғи оши- қон» (1964), ки Театри ба номи Пушкин ба саҳна гузошт, либреттои операи «Бозгашт», ки Театри опера ва балети ба номи С. Айнй соли 1967 ба саҳна гузошта буд, маҷмӯаи шеърҳои «Нафаси гарм» (1964), маҷмӯаи шеърҳои «Табас- суми ту» (1966, дар Боку бо забони озарӣ) чоп шуданд.
+		  Ашъори Шукӯҳӣ ба забонҳои украинӣ, белорусӣ, қазоқӣ, ӯзбекӣ, қирғизӣ, туркманӣ, литвонӣ ва ғайра тарҷума шуда, борҳо дар Афғонистон, Эрон ва Чехословакия нашр шудаанд. Шукӯҳӣ дар наср ва драма низ асарҳои назаррас дорад.
+		  <br><br><br>Мукофот</br> 1.Шоири Халкии Точикистон 2.Лауреати Мукофоти Давлатй. А.Рӯдакӣ 3.ду маротиба дорандаи ордени «Байраки Сурхи Мехнат» 4.Кавалери ордени «Нишони Фахрй». 5.Грамотахои Президиуми Совети Олии СССР ва РСС Точикистон. 
+		  <br><br>Хотира</br>Соли 2013 китобхонаи вилоятии кӯдаконаи вилояти Суғд ба номи шоири халқии Тоҷикистон Аминҷон Шукӯҳӣ дода шуд. Аминҷон Шукӯҳӣ 17 майи соли 1979 аз олам гузаштааст.
+		  </p>
+		  <p lang = "ru">Аминжон Шукухи (Ходжибоев) родился 10 июня 1923 года в селе Румони Ходжентского района в небогатой крестьянской семье - таджикский советский поэт, известный в современной таджикской литературе как поэт-лирик. 
+		  Преподавала таджикский язык и литературу в школах Худжанда.
+		  В годы Великой Отечественной войны работал в рядах органов внутренних дел.
+		  С 1947 года начал работать журналистом, работая заведующим отделом, ответственным секретарем, заместителем главного редактора газеты «Ленинабадская правда». 
+		  В 1955 году окончил факультет журналистики Высшей партийной школы при ЦК КПСС в Москве и был назначен редактором республиканской газеты «Советский Таджикистан».
+		  В 1961 году он был избран секретарем правления, а затем заместителем председателя правления Союза писателей Таджикистана.
+		  С 1967 по 1976 год он был председателем Государственного комитета по радио и телевидению Таджикистана. Так что это просто стало творческим.
+          Первые стихи Аминджона Шукухи были опубликованы в 1942 году в районной газете «Стахановчи».
+		  <br><br>Аминджон Шукухи начал свой творческий путь в 30-х годах прошлого века, но первые его публикации были зарегистрированы в начале 40-х годов.
+		  Первый сборник его стихов «Песня о весне» вышел в свет в 1948 году. Далее сборники «Родина мира» (1952), «Наши дни» (1954), «Голос сердца» (1956), повесть «Улица влюбленных» (1962), музыкальная драма «Улица влюбленных» (1964). ), которая была поставлена ​​Театром имени Пушкина, либретто оперы «Возвращение», поставленной Театром оперы и балета имени С. Айни в 1967 году, изданы сборник стихов «Горячее дыхание» (1964) и сборник стихов «Твоя улыбка» (1966, в Баку на азербайджанском языке).
+		  Поэзия Шукухи переведена на украинский, белорусский, казахский, узбекский, киргизский, туркменский, литовский и другие языки, несколько раз издавалась в Афганистане, Иране, Чехословакии. Великолепие в прозе и драме также имеет впечатляющие произведения.
+		  <br><br><br>Награда</br> 1. Народный поэт Таджикистана. 2. Лауреат Государственной премии. А. Рудаки 3. Дважды кавалер ордена «Трудового Красного Знамени». 4. Кавалер ордена «Знак Почета». 5. Грамоты Президиума Верховного Совета СССР и Таджикской ССР. 
+		  <br><br>Памяти</br>В 2013 году Согдийской областной детской библиотеке было присвоено имя народного поэта Таджикистана Аминжона Шукуи. Аминджон Шукухи скончался 17 мая 1979 года.
+		  </p>
+		  <p lang = "en">Aminjon Shukuhi (Hojiboev) was born on June 10, 1923 in the village of Rumoni in Khujand district to a poor peasant family - a Tajik Soviet poet, known in modern Tajik literature as a lyric poet. 
+		  He has taught Tajik language and literature in Khujand schools. 
+		  During the Great Patriotic War he worked in the ranks of the Interior Ministry.
+		  From 1947 he worked as a journalist, head of the department, executive secretary, deputy editor of the newspaper "Truth of Leninabad".
+          In 1955 he graduated from the journalism faculty of the Higher Party School under the Central Committee of the Communist Party of the Soviet Union in Moscow and was appointed editor of the republican newspaper "Soviet Tajikistan".
+          In 1961, he was elected Secretary of the Board, and later Deputy Chairman of the Board of the Writers' Union of Tajikistan.
+		  From 1967 to 1976 he was chairman of the State Committee for Radio and Television of Tajikistan. So it just got creative.
+          The first poems of Aminjon Shukuhi were published in 1942 in the regional newspaper "Stakhanovchi".
+		  <br><br>Aminjon Shukuhi started his creative steps in the 30s of the last century, but his first publications were registered in the early 40s.
+		  The first collection of his poems "Song of the Spring" was published in 1948. Further collections “Homeland of Peace” (1952), “Our Days” (1954), “Voice of the Heart” (1956), the story “Street of Lovers” (1962), the musical drama “Street of Lovers” (1964), which was staged by the Theater. named after Pushkin, the libretto of the opera "Return", staged by the Opera and Ballet Theater named after S. Ayni staged in 1967, a collection of poems “Hot Breath” (1964) and a collection of poems “Your Smile” (1966, in Baku in Azeri) were published.
+		  Shukuhi's poetry has been translated into Ukrainian, Belarusian, Kazakh, Uzbek, Kyrgyz, Turkmen, Lithuanian, and other languages, and has been published several times in Afghanistan, Iran, and Czechoslovakia. Splendor in prose and drama also has impressive works.
+		  <br><br><br>Reward</br> 1. People's Poet of Tajikistan 2. Laureate of the State Prize. A. Rudaki 3. Twice holder of the Order "Red Banner of Labor" 4. Knight of the Order "Badge of Honor". 5. Diplomas of the Presidium of the Supreme Soviet of the USSR and the Tajik SSR. 
+		  <br><br>Memory</br>In 2013, the Sughd Regional Children's Library was named after the People's Poet of Tajikistan Aminjon Shukuhi. Aminjon Shukuhi passed away on May 17, 1979.
+		  </p>
+
+        </div>
+        </section>
+      
+      <!--  Шеърхо аз шоир ........ -->
+      <section id="designs" class="samples">
+        <div class="section-text">
+          <h2 lang = "tj">Мо толиби сулҳем</h2>
+          <h2 lang = "ru">Мы ищем мира</h2>
+          <h2 lang = "en">We seek peace</h2>
+        <p lang="tj">Мо мардуми ин кишвари дар авҷу барорем,
+        <br>Як зарра ҳам аз душмани худ тарс надорем,
+        <br>Лекин ҳама чун як дилу ҷон сулҳшиорем,
+        <br>Мо зидди хазонему тарафдори баҳорем.
+
+        <br>Моро Ватану модару ҷонона азиз аст,
+        <br>Меҳри дилу ободии ҳар хона азиз аст,
+        <br>Осудагию кори далерона азиз аст,
+        <br>Ҳар як қадами худ ба ҳамин азм гузорем.
+
+        <br>Сулҳ аст чунон қалъаи пурқудрати маҳкам,
+        <br>Маҳкам бикунад боз варо халқ дамодам,
+        <br>Ҳар кас, ки бихоҳад шарафи одаму олам,
+        <br>Ӯ ҳамраҳи мо бошаду ҳамфикру қарорем.
+
+        <br>То ҳифз намоем ҳама пиру ҷавонро,
+        <br>То дур кунем аз ҳама ҷо офати ҷонро,
+        <br>Хунмаст ҷанобони ҷаҳонсӯзи ҷаҳонро
+        <br>Бо тантана бар суди адолат бисупорем.</p>
+		
+		<p lang="ru">Мы, жители этой страны, процветаем.
+        <br> У нас нет ни малейшего страха перед нашим врагом,
+        <br> Но мы все миролюбивы, как одно сердце и душа.
+        <br> Мы против казны и за весну.
+
+        <br> Мы дорожим нашей Родиной и нашими матерями.
+        <br> Драгоценна любовь сердца и достаток каждого дома,
+        <br> Дороги мир и мужественный труд,
+        <br> Давайте сделаем каждый шаг в этом направлении.
+
+        <br> Мир, как крепкая крепость,
+        <br> Снова закрой, я отдал его народу,
+        <br> Кто желает славы человека и мира,
+        <br> Он будет с нами, и мы договоримся.
+
+        <br> Чтобы защитить всех старых и молодых,
+        <br> Чтобы убрать отовсюду бич жизни,
+        <br> Кровавые джентльмены мира
+        <br>Торжественно предстанем перед судом.</p>
+		
+		<p lang="en">We, the people of this country, are flourishing.
+        <br> We have not the slightest fear of our enemy,
+        <br> But we are all peaceable as one heart and soul.
+        <br> We are against the treasury and in favor of spring.
+
+        <br> We cherish our Motherland and our mothers.
+        <br> The love of the heart and prosperity of every home is precious,
+        <br> Peace and courageous work are dear,
+        <br> Let us make every step in this direction.
+
+        <br> Peace is like a mighty stronghold,
+        <br> Close it again, I gave it to the people,
+        <br> Whoever desires the honor of man and the world,
+        <br> He will be with us and we will agree.
+
+        <br> To protect all old and young,
+        <br> To remove the scourge of life from everywhere,
+        <br> Bloody gentlemen of the world
+        <br> Let us solemnly submit to the court of justice. </p>
+		
+        </div>
+   
+      </section>
+
+      <!--  Тамос бо мо ........ -->
+      <section id="contact" class="contact-section">
+        <div class="section-text">
+          <h2 lang="tj">тамос гиред</h2>
+          <h2 lang="ru">контакт</h2>
+          <h2 lang="en">contact</h2>
+          <p lang="tj">Мо аз шумо шунидан мехостем!<br><br>Агар шумо хоҳед, ки каталоги ҳармоҳаи моро дастрас кунед, тавассути пур кардани варақа бо ном ва суроғаи почтаи электронии худ обуна шавед.</p>
+          <p lang="ru">Мы будем рады услышать от вас! <br> <br> Если вы хотите получить доступ к нашему ежемесячному каталогу, подпишитесь, заполнив форму, указав свое имя и адрес электронной почты.</p>
+          <p lang="en">We'd love to hear from you! <br> <br> If you would like to access our monthly catalog, subscribe by filling out the form with your name and email address. </p>
+        </div>
+        <div class="contact-info">
+          <div class="form-box">
+            <form id="form" class="contact-form" action="https://www.freecodecamp.com/email-submit">
+              <label for="name" class="form-entry" lang="tj">Номи шумо <br>
+                <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp&nbsp;Ворид созед номи худро" required><br>
+              </label>
+			  <label for="name" class="form-entry" lang="ru">Твое имя <br>
+                <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp&nbsp;Введите ваше имя" required><br>
+              </label>
+			  <label for="name" class="form-entry" lang ="en">Your name <br>
+                <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp&nbsp;Enter your name" required><br>
+              </label>
+              <label for="email" class="form-entry" lang="tj">Почтаи электронӣ <br>
+                <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp&nbsp;Ворид созед Почтаи электронии худро" required><br>
+              </label>
+			  <label for="email" class="form-entry" lang="ru">Эл-почта <br>
+                <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp&nbsp;Введите адрес электронной почты" required><br>
+              </label>
+			  <label for="email" class="form-entry" lang="en">E-mail <br>
+                <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp&nbsp;Enter your email" required><br>
+              </label>
+              <label for="message" class="form-entry" lang="tj">Паём<br>
+                <textarea name="message" id="message" type="textarea" class="txt-box" placeholder="&nbsp;Ихтиёрӣ"></textarea><br>
+              </label><br>
+			  <label for="message" class="form-entry" lang="ru">Сообщение<br>
+                <textarea name="message" id="message" type="textarea" class="txt-box" placeholder="&nbsp;По желанию"></textarea><br>
+              </label><br>
+			  <label for="message" class="form-entry" lang="en">Message<br>
+                <textarea name="message" id="message" type="textarea" class="txt-box" placeholder="&nbsp;Optional"></textarea><br>
+              </label><br>
+              <input class="btn" id="submit" type="submit" value="Пешниҳод кунед" lang="tj">
+              <input class="btn" id="submit" type="submit" value="Сделай предложение" lang="ru">
+              <input class="btn" id="submit" type="submit" value="Make an offer" lang="en">
+            </form>
+          </div>
+        </div>
+      
+      </section>
+    </div>
+  
+  </main>
+  <footer class="footer-section">
+    <div class="footer-info">
+      <ul style="list-style:none;"lang="tj">
+        <li><span>Махфият</span></li>
+        <li><span>ШАРТҲО</span></li>
+        <li><span>Тамос</span></li>
+      </ul>
+	  <ul style="list-style:none;"lang="ru">
+        <li><span>Конфиденциальность</span></li>
+        <li><span>УСЛОВИЯ </span></li>
+        <li><span>Контакт</span></li>
+      </ul>
+	  <ul style="list-style:none;"lang="en">
+        <li><span>Confidentiality</span></li>
+        <li><span>CONDITIONS </span></li>
+        <li><span>Contact</span></li>
+      </ul>
+    </div>
+    <span class="personal-info" lang="tj">Барномасоз: Миров М.<br>Дар telegram тамос гиред</span>
+    <span class="personal-info" lang="ru">Программист: Миров М.<br>Связаться по телеграмме</span>
+    <span class="personal-info" lang="en">Programmer: Mirov M.<br>Contact by telegram</span>
+    <span lang="tj">ҶУМХУРИИ ТОҶИКИСТОН</span>
+    <span lang="ru">РЕСПУБЛИКА ТАДЖИКИСТАН</span>
+    <span lang="en">THE REPUBLIC OF TAJIKISTAN</span>
+  </footer>
+  
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+$('[lang]').hide(); 
+$('[lang="tj"]').show(); 
+$('#lang-switch').change(function () { 
+    var lang = $(this).val(); 
+    switch (lang) {
+        case 'tj':
+            $('[lang]').hide();
+            $('[lang="tj"]').show();
+        break;
+        case 'ru':
+            $('[lang]').hide();
+            $('[lang="ru"]').show();
+        break;
+		 case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="tj"]').show();
+        }
+});
+</script>
+</body>
+</html>
